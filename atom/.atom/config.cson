@@ -1,0 +1,23 @@
+"*":
+  welcome:
+    showOnStartup: false
+  core:
+    autoHideMenuBar: true
+  editor:
+    invisibles:
+      eol: " "
+    fontFamily: "Hasklig"
+    softWrap: true
+    showInvisibles: true
+    fontSize: 13
+  linter:
+    errorPanelHeight: 263
+  "linter-rubocop":
+    command: "/home/alex/.gem/ruby/2.2.0/bin/rubocop"
+  "file-icons":
+    coloured: false
+  "markdown-preview":
+    useGitHubStyle: true
+  "terminal-plus":
+    core: {}
+    style: {}

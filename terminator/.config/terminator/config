@@ -1,0 +1,97 @@
+[global_config]
+  always_split_with_profile = True
+  borderless = True
+  broadcast_default = off
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  inactive_color_offset = 1.0
+  scroll_tabbar = True
+  tab_position = bottom
+  title_font = Liberation Sans 13
+  title_inactive_bg_color = "#95a5a6"
+  title_inactive_fg_color = "#e0e0e0"
+  title_transmit_bg_color = "#2c3e50"
+  title_transmit_fg_color = "#e0e0e0"
+[keybindings]
+  broadcast_all = None
+  broadcast_group = None
+  broadcast_off = None
+  close_term = None
+  close_window = None
+  edit_window_title = None
+  go_down = None
+  go_left = None
+  go_next = None
+  go_prev = None
+  go_right = None
+  go_up = None
+  group_all = None
+  group_tab = None
+  hide_window = None
+  insert_number = None
+  insert_padded = None
+  layout_launcher = None
+  move_tab_left = None
+  move_tab_right = None
+  new_tab = None
+  new_terminator = None
+  new_window = None
+  next_tab = None
+  prev_tab = None
+  reset = None
+  reset_clear = None
+  resize_left = <Primary><Shift>Left
+  resize_right = <Primary><Shift>Right
+  rotate_ccw = None
+  rotate_cw = None
+  scaled_zoom = None
+  search = None
+  split_horiz = <Primary><Shift>n
+  split_vert = None
+  toggle_scrollbar = None
+  toggle_zoom = None
+  ungroup_all = None
+  ungroup_tab = None
+  zoom_in = None
+  zoom_normal = None
+  zoom_out = None
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#2c3e50"
+    background_darkness = 0.04
+    background_image = None
+    background_type = transparent
+    cursor_blink = False
+    cursor_color = "#1abc9c"
+    font = Liberation Mono for Powerline 11
+    foreground_color = "#e0e0e0"
+    palette = "#073642:#e74c3c:#2ecc71:#f1c40f:#3498db:#9b59b6:#1abc9c:#e0e0e0:#95a5a6:#e74c3c:#2ed274:#f1c40f:#3498db:#9b59b6:#1abc9c:#ecf0f1"
+    scrollbar_position = hidden
+    use_system_font = False
+  [[Main]]
+    background_color = "#2c3e50"
+    background_image = None
+    cursor_blink = False
+    cursor_color = "#1abc9c"
+    font = Liberation Mono for Powerline 11
+    foreground_color = "#e0e0e0"
+    palette = "#073642:#e74c3c:#2ecc71:#f1c40f:#3498db:#9b59b6:#1abc9c:#e0e0e0:#95a5a6:#e74c3c:#2ed274:#f1c40f:#3498db:#9b59b6:#1abc9c:#ecf0f1"
+    scrollbar_position = hidden
+    use_system_font = False
+  [[One dark]]
+    background_color = "#282c34"
+    background_image = None
+    cursor_color = "#528bff"
+    font = Liberation Mono for Powerline 11
+    foreground_color = "#abb2bf"
+    palette = "#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#ffffff"
+    use_system_font = False
