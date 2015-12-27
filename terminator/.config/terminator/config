@@ -2,7 +2,7 @@
   always_split_with_profile = True
   borderless = True
   broadcast_default = off
-  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  enabled_plugins = InactivityWatch, ActivityWatch, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   inactive_color_offset = 1.0
   scroll_tabbar = True
   tab_position = bottom
@@ -35,6 +35,7 @@
   new_tab = None
   new_terminator = None
   new_window = None
+  next_profile = <Alt>t
   next_tab = None
   prev_tab = None
   reset = None
@@ -72,7 +73,7 @@
     background_type = transparent
     cursor_blink = False
     cursor_color = "#1abc9c"
-    font = Liberation Mono for Powerline 11
+    font = Liberation Mono 11
     foreground_color = "#e0e0e0"
     palette = "#073642:#e74c3c:#2ecc71:#f1c40f:#3498db:#9b59b6:#1abc9c:#e0e0e0:#95a5a6:#e74c3c:#2ed274:#f1c40f:#3498db:#9b59b6:#1abc9c:#ecf0f1"
     scrollbar_position = hidden
@@ -82,7 +83,7 @@
     background_image = None
     cursor_blink = False
     cursor_color = "#1abc9c"
-    font = Liberation Mono for Powerline 11
+    font = Liberation Mono 11
     foreground_color = "#e0e0e0"
     palette = "#073642:#e74c3c:#2ecc71:#f1c40f:#3498db:#9b59b6:#1abc9c:#e0e0e0:#95a5a6:#e74c3c:#2ed274:#f1c40f:#3498db:#9b59b6:#1abc9c:#ecf0f1"
     scrollbar_position = hidden
@@ -91,7 +92,7 @@
     background_color = "#282c34"
     background_image = None
     cursor_color = "#528bff"
-    font = Liberation Mono for Powerline 11
+    font = Liberation Mono 11
     foreground_color = "#abb2bf"
     palette = "#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#ffffff"
     use_system_font = False
