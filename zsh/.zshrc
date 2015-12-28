@@ -2,11 +2,16 @@ export PAGER=vimpager
 export EDITOR=vim
 export TERM=xterm-256color
 
-for config in ~/.zsh/*.zsh
-  do source $config
-done
+sources=(
+  ~/.zsh/*.zsh
+  /usr/share/doc/pkgfile/command-not-found.zsh
+)
+sources=( $sources(N-/) )
 
-source /usr/share/doc/pkgfile/command-not-found.zsh
+for config in $sources; do
+  source $config
+  echo $config
+done
 
 # Disable the [nyae] completions
 unsetopt correct
