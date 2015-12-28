@@ -57,13 +57,23 @@
   zoom_out = None
 [layouts]
   [[default]]
-    [[[child1]]]
-      parent = window0
-      profile = default
-      type = Terminal
-    [[[window0]]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 06d3d706-f2e0-49ee-afa7-05249f7f739d
+      last_active_window = True
+      maximised = False
+      order = 0
       parent = ""
+      position = 0:0
+      size = 722, 402
+      title = WeeChat 1.4-dev
       type = Window
+    [[[terminal1]]]
+      order = 0
+      parent = child0
+      profile = Main
+      type = Terminal
+      uuid = 06d3d706-f2e0-49ee-afa7-05249f7f739d
 [plugins]
 [profiles]
   [[default]]
