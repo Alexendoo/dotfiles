@@ -1,5 +1,5 @@
 favorites=google-chrome-beta.desktop,exo-terminal-emulator.desktop,exo-file-manager.desktop,atom.desktop
-recent=google-chrome-beta.desktop,keepass.desktop,redshift-gtk.desktop,vlc.desktop,atom.desktop,xfce-keyboard-settings.desktop,pavucontrol.desktop,exo-terminal-emulator.desktop,terminator.desktop,xfce4-taskmanager.desktop
+recent=google-chrome-beta.desktop,exo-terminal-emulator.desktop,chrome-hmjkmjkepdijhoojdojkdfohbdgmmhki-Default.desktop,redshift-gtk.desktop,xfce4-screenshooter.desktop,keepass.desktop,vlc.desktop,atom.desktop,xfce-keyboard-settings.desktop,pavucontrol.desktop
 button-title=Applications
 button-icon=xfce4-whiskermenu
 button-single-row=false
