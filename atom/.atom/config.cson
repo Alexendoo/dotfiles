@@ -3,13 +3,16 @@
     showOnStartup: false
   core:
     autoHideMenuBar: true
+    disabledPackages: [
+      "metrics"
+    ]
   editor:
     invisibles:
       eol: " "
     fontFamily: "Hasklig"
     softWrap: true
     showInvisibles: true
-    fontSize: 13
+    zoomFontWhenCtrlScrolling: false
   linter:
     errorPanelHeight: 263
   "linter-rubocop":
@@ -18,6 +21,3 @@
     coloured: false
   "markdown-preview":
     useGitHubStyle: true
-  "terminal-plus":
-    core: {}
-    style: {}
