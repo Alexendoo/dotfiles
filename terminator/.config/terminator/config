@@ -26,6 +26,7 @@
   go_up = None
   group_all = None
   group_tab = None
+  help = None
   hide_window = None
   insert_number = None
   insert_padded = None
@@ -35,7 +36,7 @@
   new_tab = None
   new_terminator = None
   new_window = None
-  next_profile = <Alt>t
+  next_profile = None
   next_tab = None
   prev_tab = None
   reset = None
