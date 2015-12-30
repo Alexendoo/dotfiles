@@ -21,3 +21,5 @@
     coloured: false
   "markdown-preview":
     useGitHubStyle: true
+  "exception-reporting":
+    userId: "01c5d91d-38f2-dfb7-3a4c-12341a62271e"
