@@ -1,8 +1,7 @@
 export PATH
 path=(
   ~/.gem/ruby/*/bin(Nn[-1])
-  /omomoom
-  ~/test
+  ~/.node_modules/bin
   $path
 )
-path=( ${(u)^path:A}(N-/) )
+path=( ${(u)^path:A}(N/) )

@@ -6,11 +6,10 @@ sources=(
   ~/.zsh/*.zsh
   /usr/share/doc/pkgfile/command-not-found.zsh
 )
-sources=( $sources(N-/) )
+sources=( ${(u)^sources:A}(N.) )
 
 for config in $sources; do
   source $config
-  echo $config
 done
 
 # Disable the [nyae] completions
