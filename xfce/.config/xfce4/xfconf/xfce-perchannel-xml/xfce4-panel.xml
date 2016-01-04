@@ -41,6 +41,7 @@
         <value type="string" value="task manager"/>
         <value type="string" value="google-chrome-beta"/>
         <value type="string" value="redshift-gtk"/>
+        <value type="string" value="hexchat"/>
       </property>
     </property>
     <property name="plugin-16" type="string" value="whiskermenu"/>

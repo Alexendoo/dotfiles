@@ -32,7 +32,10 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;k" type="string" value="keepass"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;a" type="string" value="keepass --auto-type"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="string" value="xfce4-taskmanager"/>
-      <property name="&lt;Alt&gt;x" type="string" value="xfce4-popup-whiskermenu">
+      <property name="&lt;Alt&gt;x" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Super&gt;x" type="string" value="xfce4-popup-whiskermenu">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
     </property>

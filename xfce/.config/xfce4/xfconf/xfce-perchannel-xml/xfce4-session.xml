@@ -25,4 +25,7 @@
   <property name="splash" type="empty">
     <property name="Engine" type="empty"/>
   </property>
+  <property name="security" type="empty">
+    <property name="EnableTcp" type="bool" value="false"/>
+  </property>
 </channel>
