@@ -1,0 +1,2 @@
+set line-graphics = utf-8
+set main-view = date:short author:width=10 commit-title:graph=v2,refs=yes
