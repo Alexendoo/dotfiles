@@ -9,12 +9,16 @@
   editor:
     invisibles:
       eol: " "
+      space: " "
     fontFamily: "Hasklig"
     softWrap: true
     showInvisibles: true
     zoomFontWhenCtrlScrolling: false
+    scrollPastEnd: true
+    showIndentGuide: true
   linter:
     errorPanelHeight: 263
+    showErrorPanel: false
   "linter-rubocop":
     command: "/home/alex/.gem/ruby/2.2.0/bin/rubocop"
   "file-icons":
