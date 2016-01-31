@@ -1,29 +1,34 @@
 "*":
-  welcome:
-    showOnStartup: false
+  "autocomplete-plus": {}
   core:
     autoHideMenuBar: true
-    disabledPackages: [
-      "metrics"
-    ]
   editor:
+    fontFamily: "Hasklig"
     invisibles:
       eol: " "
       space: " "
-    fontFamily: "Hasklig"
-    softWrap: true
-    showInvisibles: true
-    zoomFontWhenCtrlScrolling: false
     scrollPastEnd: true
     showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    zoomFontWhenCtrlScrolling: false
+  "exception-reporting":
+    userId: "01c5d91d-38f2-dfb7-3a4c-12341a62271e"
+  "file-icons":
+    coloured: false
+  "find-and-replace": {}
+  "line-ending-selector": {}
   linter:
     errorPanelHeight: 263
     showErrorPanel: false
   "linter-rubocop":
     command: "/home/alex/.gem/ruby/2.2.0/bin/rubocop"
-  "file-icons":
-    coloured: false
   "markdown-preview":
     useGitHubStyle: true
-  "exception-reporting":
-    userId: "01c5d91d-38f2-dfb7-3a4c-12341a62271e"
+  "spell-check": {}
+  "status-bar": {}
+  tabs: {}
+  "tree-view":
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false
