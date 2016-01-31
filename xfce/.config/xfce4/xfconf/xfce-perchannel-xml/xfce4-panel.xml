@@ -31,17 +31,21 @@
     <property name="plugin-5" type="string" value="clock">
       <property name="mode" type="uint" value="3"/>
       <property name="fuzziness" type="uint" value="0"/>
+      <property name="tooltip-format" type="string" value="%A %d %B %Y - %H:%M:%S"/>
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="show-frame" type="bool" value="false"/>
       <property name="names-visible" type="array">
         <value type="string" value="vlc"/>
-        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="redshift-gtk"/>
+        <value type="string" value="google-chrome"/>
+        <value type="string" value="google-chrome-beta"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="task manager"/>
-        <value type="string" value="google-chrome-beta"/>
-        <value type="string" value="redshift-gtk"/>
+        <value type="string" value="electron"/>
         <value type="string" value="hexchat"/>
+        <value type="string" value="xfce terminal"/>
+        <value type="string" value="xfce4-power-manager"/>
       </property>
     </property>
     <property name="plugin-16" type="string" value="whiskermenu"/>
