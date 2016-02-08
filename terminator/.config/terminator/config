@@ -97,6 +97,7 @@
     font = Liberation Mono 11
     foreground_color = "#e0e0e0"
     palette = "#073642:#e74c3c:#2ecc71:#f1c40f:#3498db:#9b59b6:#1abc9c:#e0e0e0:#95a5a6:#e74c3c:#2ed274:#f1c40f:#3498db:#9b59b6:#1abc9c:#ecf0f1"
+    scrollback_lines = 5000
     scrollbar_position = hidden
     use_system_font = False
   [[One dark]]
@@ -106,4 +107,6 @@
     font = Liberation Mono 11
     foreground_color = "#abb2bf"
     palette = "#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#ffffff"
+    scrollback_lines = 5000
+    scrollbar_position = hidden
     use_system_font = False
