@@ -1,5 +1,5 @@
-favorites=google-chrome.desktop,exo-terminal-emulator.desktop,atom.desktop,exo-file-manager.desktop,vlc.desktop,keepass.desktop,chrome-hmjkmjkepdijhoojdojkdfohbdgmmhki-Default.desktop
-recent=google-chrome.desktop,redshift-gtk.desktop,keepass.desktop,exo-terminal-emulator.desktop,xfce4-screenshooter.desktop,chrome-hmjkmjkepdijhoojdojkdfohbdgmmhki-Default.desktop,chromium.desktop,exo-file-manager.desktop,hexchat.desktop,xfce-keyboard-settings.desktop
+favorites=google-chrome.desktop,exo-terminal-emulator.desktop,atom.desktop,exo-file-manager.desktop,vlc.desktop,keepass.desktop,chrome-hmjkmjkepdijhoojdojkdfohbdgmmhki-Default.desktop,kde4-krita.desktop,jetbrains-webstorm.desktop
+recent=jetbrains-webstorm.desktop,keepass.desktop,google-chrome.desktop,xfce4-screenshooter.desktop,chrome-hmjkmjkepdijhoojdojkdfohbdgmmhki-Default.desktop,xfce4-accessibility-settings.desktop,xfce-keyboard-settings.desktop,kde4-krita.desktop,exo-terminal-emulator.desktop,redshift-gtk.desktop
 button-title=Applications
 button-icon=xfce4-whiskermenu
 button-single-row=false
