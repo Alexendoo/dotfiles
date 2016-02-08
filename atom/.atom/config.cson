@@ -1,5 +1,10 @@
 "*":
+  "atom-beautify":
+    _analyticsUserId: "a2516150-332e-464a-9a4d-531203fa7735"
   "autocomplete-plus": {}
+  "autohide-tree-view":
+    hideDelay: 0
+    showDelay: 0
   core:
     autoHideMenuBar: true
   editor:
@@ -17,6 +22,7 @@
   "file-icons":
     coloured: false
   "find-and-replace": {}
+  "gulp-control": {}
   "line-ending-selector": {}
   linter:
     errorPanelHeight: 263
@@ -25,10 +31,10 @@
     command: "/home/alex/.gem/ruby/2.2.0/bin/rubocop"
   "markdown-preview":
     useGitHubStyle: true
+  pigments: {}
   "spell-check": {}
   "status-bar": {}
   tabs: {}
-  "tree-view":
-    squashDirectoryNames: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
