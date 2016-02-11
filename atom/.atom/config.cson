@@ -7,6 +7,9 @@
     showDelay: 0
   core:
     autoHideMenuBar: true
+    disabledPackages: [
+      "emmet"
+    ]
   editor:
     fontFamily: "Hasklig"
     invisibles:
@@ -17,6 +20,7 @@
     showInvisibles: true
     softWrap: true
     zoomFontWhenCtrlScrolling: false
+  emmet: {}
   "exception-reporting":
     userId: "01c5d91d-38f2-dfb7-3a4c-12341a62271e"
   "file-icons":
