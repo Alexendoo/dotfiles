@@ -6,6 +6,7 @@ alias s='screen -R'
 
 alias mosh='mosh --predict=experimental --no-init'
 alias sc='openssl s_client -connect'
+alias mirror='rsync -rPhity --delete-after'
 
 alias what='file -krzs'
 alias mkdir='mkdir -p'
@@ -26,3 +27,8 @@ alias gl='git log --stat'
 alias gm='git merge'
 alias gr='git rebase'
 alias gs='git status'
+
+[[ $(uname -o) == 'Cygwin' ]] || exit 0
+
+alias e='atom.cmd'
+alias win='cmd /c'
