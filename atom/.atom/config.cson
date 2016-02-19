@@ -10,6 +10,7 @@
     disabledPackages: [
       "emmet"
     ]
+  docblockr: {}
   editor:
     fontFamily: "Hasklig"
     invisibles:
@@ -35,6 +36,7 @@
     command: "/home/alex/.gem/ruby/2.2.0/bin/rubocop"
   "markdown-preview":
     useGitHubStyle: true
+  "markdown-writer": {}
   pigments: {}
   "spell-check": {}
   "status-bar": {}

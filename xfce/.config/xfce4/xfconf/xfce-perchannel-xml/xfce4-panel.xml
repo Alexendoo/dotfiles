@@ -46,6 +46,7 @@
         <value type="string" value="hexchat"/>
         <value type="string" value="xfce terminal"/>
         <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="notes"/>
       </property>
     </property>
     <property name="plugin-16" type="string" value="whiskermenu"/>
