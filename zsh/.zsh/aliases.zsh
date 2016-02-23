@@ -28,7 +28,7 @@ alias gm='git merge'
 alias gr='git rebase'
 alias gs='git status'
 
-[[ $(uname -o) == 'Cygwin' ]] || exit 0
-
-alias e='atom.cmd'
-alias win='cmd /c'
+if [[ $(uname -o) == 'Cygwin' ]]; then
+  alias e='atom.cmd'
+  alias win='cmd /c'
+fi
