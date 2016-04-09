@@ -4,6 +4,8 @@ alias serve='browser-sync start --server'
 alias e='atom'
 alias s='screen -R'
 
+alias ng='noglob'
+
 alias mosh='mosh --predict=experimental --no-init'
 alias sc='openssl s_client -connect'
 alias mirror='rsync -rPhity --delete-after'
