@@ -1,3 +1,9 @@
+# Secure
+mitmproxy/.mitmproxy/*.0
+mitmproxy/.mitmproxy/*.cer
+mitmproxy/.mitmproxy/*.p12
+mitmproxy/.mitmproxy/*.pem
+
 # Files that aren't as important and change often
 xfce/.config/xfce4/helpers.rc
 xfce/.config/xfce4/panel/whiskermenu-16.rc
