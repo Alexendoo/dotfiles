@@ -10,6 +10,9 @@
     disabledPackages: [
       "emmet"
     ]
+    packagesWithKeymapsDisabled: [
+      "standardjs-snippets"
+    ]
   docblockr: {}
   editor:
     fontFamily: "Hasklig"
@@ -32,6 +35,10 @@
   linter:
     errorPanelHeight: 263
     showErrorPanel: false
+  "linter-js-standard":
+    checkStyleDevDependencies: true
+  "linter-jshint":
+    disableWhenNoJshintrcFileInPath: true
   "linter-rubocop":
     command: "/home/alex/.gem/ruby/2.2.0/bin/rubocop"
   "markdown-preview":
