@@ -34,8 +34,12 @@ alias gs='git status'
 alias pull='git pull'
 alias push='git push'
 
+alias system='sudo systemctl'
+alias journal='sudo journalctl'
+
 if [[ $(uname -o) == 'Cygwin' ]]; then
   alias e='atom.cmd'
+  alias c='cmd /c start'
   alias win='cmd /c'
   alias heroku='heroku.bat'
 fi
