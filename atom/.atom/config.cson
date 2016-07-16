@@ -22,7 +22,6 @@
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
-    softWrap: true
     zoomFontWhenCtrlScrolling: false
   emmet: {}
   "exception-reporting":

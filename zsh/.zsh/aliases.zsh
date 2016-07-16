@@ -1,6 +1,7 @@
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 alias e='atom'
+alias p='less'
 alias s='screen -R'
 
 alias ng='noglob'
@@ -35,6 +36,8 @@ alias push='git push'
 
 alias system='sudo systemctl'
 alias journal='sudo journalctl'
+
+alias init-nvm='source /usr/share/nvm/init-nvm.sh'
 
 if [[ $(uname -o) == 'Cygwin' ]]; then
   alias e='atom.cmd'

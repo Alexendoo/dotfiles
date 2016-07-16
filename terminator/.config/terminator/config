@@ -2,7 +2,7 @@
   always_split_with_profile = True
   borderless = True
   broadcast_default = off
-  enabled_plugins = InactivityWatch, ActivityWatch, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  enabled_plugins = InactivityWatch, ActivityWatch, APTURLHandler
   inactive_color_offset = 1.0
   scroll_tabbar = True
   tab_position = bottom
@@ -67,7 +67,6 @@
       parent = ""
       position = 0:0
       size = 722, 402
-      title = WeeChat 1.4-dev
       type = Window
     [[[terminal1]]]
       order = 0
@@ -79,7 +78,7 @@
 [profiles]
   [[default]]
     background_color = "#2c3e50"
-    background_darkness = 0.04
+    background_darkness = 1.15
     background_image = None
     background_type = transparent
     cursor_blink = False
