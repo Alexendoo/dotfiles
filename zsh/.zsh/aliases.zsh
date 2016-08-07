@@ -13,31 +13,78 @@ alias mirror='rsync -rPhity --delete-after'
 alias what='file -krzs'
 alias mkdir='mkdir -p'
 
-alias ff='git merge --ff-only'
-alias g='git'
-alias ga='git add'
-alias gb='git bisect'
-alias gbr='git branch'
-alias gc='git commit'
-alias gca='git commit -a'
-alias gch='git checkout'
-alias gcm='git commit -m'
-alias gd='git diff'
-alias gds='git diff --staged'
-alias gdw='git diff --word-diff'
-alias gf='git fetch'
-alias gfa='git fetch --all --prune'
-alias gl='git log --stat'
-alias gm='git merge'
-alias gr='git rebase'
-alias gs='git status'
-alias pull='git pull'
-alias push='git push'
-
 alias system='sudo systemctl'
 alias journal='sudo journalctl'
 
 alias init-nvm='source /usr/share/nvm/init-nvm.sh'
+
+if type hub > /dev/null; then
+  git=hub
+  alias git=hub
+else
+  git=git
+fi
+
+alias ff="$git merge --ff-only"
+alias g="$git"
+alias ga="$git add"
+alias gb="$git bisect"
+alias gbr="$git branch"
+alias gc="$git commit"
+alias gca="$git commit -a"
+alias gch="$git checkout"
+alias gcm="$git commit -m"
+alias gd="$git diff"
+alias gds="$git diff --staged"
+alias gdw="$git diff --word-diff"
+alias gf="$git fetch"
+alias gfa="$git fetch --all --prune"
+alias gl="$git log --stat"
+alias gm="$git merge"
+alias gr="$git rebase"
+alias gs="$git status"
+
+gitcommands=(
+  # Core git commands
+  add am annotate apply archive bisect blame branch checkout
+  cherry cherry-pick clean clone commit count-objects describe
+  fetch filter-branch for-each-ref log ls-files ls-remote
+  ls-tree merge pull push rebase reflog remote reset revert
+  shortlog show stage stash status submodule subtree tag
+  whatchanged
+)
+
+# https://github.com/tj/git-extras
+if type git-extras > /dev/null; then
+  gitcommands+=(
+    archive-file authors back bug changelog chore commits-since
+    contrib count create-branch delete-branch
+    delete-merged-branches delete-submodule delete-tag delta
+    effort feature fresh-branch graft guilt ignore-io ignore
+    line-summary local-commits merge-into merge-repo missing
+    rebase-patch refactor release rename-tag repl reset-file
+    root setup show-merged-branches show-tree
+    show-unmerged-branches squash summary undo
+  )
+fi
+
+# https://github.com/github/hub
+if [[ "$git" == "hub" ]]; then
+  gitcommands+=(
+    create browse compare fork pull-request ci-status
+  )
+fi
+
+# https://github.com/paulirish/git-recent
+if type git-recent > /dev/null; then
+  gitcommands+=(recent)
+fi
+
+for gitcommand in $gitcommands; do
+  alias "$gitcommand"="$git $gitcommand"
+done
+
+unset gitcommand gitcommands
 
 if [[ $(uname -o) == 'Cygwin' ]]; then
   alias e='atom.cmd'

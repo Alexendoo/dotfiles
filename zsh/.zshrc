@@ -9,3 +9,5 @@ sources=( ${(u)^sources:A}(N.) )
 for config in $sources; do
   source $config
 done
+
+unset config sources
