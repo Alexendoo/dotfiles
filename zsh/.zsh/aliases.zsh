@@ -39,31 +39,24 @@ alias journal='sudo journalctl'
 
 alias init-nvm='source /usr/share/nvm/init-nvm.sh'
 
-if type hub > /dev/null; then
-  git=hub
-  alias git=hub
-else
-  git=git
-fi
-
-alias ff="$git merge --ff-only"
-alias g="$git"
-alias ga="$git add"
-alias gb="$git bisect"
-alias gbr="$git branch"
-alias gc="$git commit"
-alias gca="$git commit -a"
-alias gch="$git checkout"
-alias gcm="$git commit -m"
-alias gd="$git diff"
-alias gds="$git diff --staged"
-alias gdw="$git diff --word-diff"
-alias gf="$git fetch"
-alias gfa="$git fetch --all --prune"
-alias gl="$git log --stat"
-alias gm="$git merge"
-alias gr="$git rebase"
-alias gs="$git status"
+alias ff="git merge --ff-only"
+alias g="git"
+alias ga="git add"
+alias gb="git bisect"
+alias gbr="git branch"
+alias gc="git commit"
+alias gca="git commit -a"
+alias gch="git checkout"
+alias gcm="git commit -m"
+alias gd="git diff"
+alias gds="git diff --staged"
+alias gdw="git diff --word-diff"
+alias gf="git fetch"
+alias gfa="git fetch --all --prune"
+alias gl="git log --stat"
+alias gm="git merge"
+alias gr="git rebase"
+alias gs="git status"
 
 gitcommands=(
   # Core git commands
@@ -89,23 +82,27 @@ if type git-extras > /dev/null; then
   )
 fi
 
-# https://github.com/github/hub
-if [[ "$git" == "hub" ]]; then
-  gitcommands+=(
-    create browse compare fork pull-request ci-status
-  )
-fi
-
 # https://github.com/paulirish/git-recent
 if type git-recent > /dev/null; then
   gitcommands+=(recent)
 fi
 
 for gitcommand in $gitcommands; do
-  alias "$gitcommand"="$git $gitcommand"
+  alias "$gitcommand"="git $gitcommand"
 done
 
 unset gitcommand gitcommands
+
+# https://github.com/github/hub
+if type hub > /dev/null; then
+  alias create='hub create'
+  alias browse='hub browse'
+  alias compare='hub compare'
+  alias fork='hub fork'
+  alias pull-request='hub pull-request -o'
+  alias ci-status='hub ci-status -v'
+  alias ci='hub ci-status -v'
+fi
 
 if [[ $(uname -o) == 'Cygwin' ]]; then
   alias e='atom.cmd'
