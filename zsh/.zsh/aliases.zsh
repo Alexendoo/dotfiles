@@ -105,7 +105,8 @@ if type hub > /dev/null; then
 fi
 
 if [[ $(uname -o) == 'Cygwin' ]]; then
-  alias e='atom.cmd'
+  alias e='code.cmd'
+  alias code='code.cmd'
   alias c='cmd /c start'
   alias win='cmd /c'
   alias heroku='heroku.bat'
