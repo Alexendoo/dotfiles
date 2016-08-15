@@ -1,8 +1,10 @@
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 
-alias e='atom'
+alias e='code'
 alias p='less'
 alias s='screen -R'
+alias help='run-help'
+alias grep='grep --color=auto'
 
 alias ng='noglob'
 
@@ -69,7 +71,7 @@ gitcommands=(
 )
 
 # https://github.com/tj/git-extras
-if type git-extras > /dev/null; then
+if (( $+commands[git-extras] )); then
   gitcommands+=(
     archive-file authors back bug changelog chore commits-since
     contrib count create-branch delete-branch
@@ -83,7 +85,7 @@ if type git-extras > /dev/null; then
 fi
 
 # https://github.com/paulirish/git-recent
-if type git-recent > /dev/null; then
+if (( $+commands[git-recent] )); then
   gitcommands+=(recent)
 fi
 
@@ -105,7 +107,6 @@ if type hub > /dev/null; then
 fi
 
 if [[ $(uname -o) == 'Cygwin' ]]; then
-  alias e='code.cmd'
   alias code='code.cmd'
   alias c='cmd /c start'
   alias win='cmd /c'
