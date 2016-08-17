@@ -1,3 +1,3 @@
 #### Usage:
 
-`stow [folder]`
+`./install [folder]`
