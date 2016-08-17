@@ -1,5 +1,7 @@
+zsh_dir=$(dirname $(readlink -f ~/.zshrc))
+
 sources=(
-  ~/.zsh/*.zsh
+  "$zsh_dir"/*.zsh
   /etc/zsh_command_not_found
   /usr/share/doc/pkgfile/command-not-found.zsh
   ~/.travis/travis.sh
@@ -10,4 +12,4 @@ for config in $sources; do
   source $config
 done
 
-unset config sources
+unset config sources zsh_dir
