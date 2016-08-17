@@ -1,19 +1,32 @@
 autoload -U vcs_info
 
-precmd () {
+precmd_prompt() {
   vcs_info
   unset PROMPT
-  PROMPT+='%B%F{red}%(?..%? )%b%f' # return status if ≠ 0
-  PROMPT+='%F{blue}%n%f@%M ' # user@host
-  PROMPT+='%B%40<..<%~%<<%b ' # current directory, truncated to 40 chars
+  # return status if ≠ 0
+  PROMPT+='%B%F{red}%(?..%? )%b%f'
+  # user@host
+  PROMPT+='%F{blue}%n%f@%M '
+  # current directory, truncated to 40 chars
+  PROMPT+='%B%40<..<%~%<<%b '
+  # git/hg/etc information
   [[ -n "$vcs_info_msg_0_" ]] && PROMPT+="$vcs_info_msg_0_ "
+  # % or # if root
   PROMPT+='%# '
 }
 
+precmd_functions+=(
+  precmd_prompt
+)
+
+add_vcs_style() {
+  # regular prompt
+  zstyle ":vcs_info:$1:*" formats       "%F{$2}[%F{green}%b%F{$2}]%f"
+  # prompt with action (e.g. bisect)
+  zstyle ":vcs_info:$1:*" actionformats "%F{$2}[%F{green}%b%f|%F{red}%a%F{$2}]%f"
+}
+
 zstyle ':vcs_info:*' enable git hg
-# regular prompt
-zstyle ':vcs_info:*' formats \
-  '%F{magenta}[%F{green}%b%F{magenta}]%f'
-# prompt with action (e.g. bisect)
-zstyle ':vcs_info:*' actionformats \
-  '%F{magenta}[%F{green}%b%f|%F{red}%a%F{magenta}]%f'
+
+add_vcs_style '*'   blue
+add_vcs_style 'git' magenta

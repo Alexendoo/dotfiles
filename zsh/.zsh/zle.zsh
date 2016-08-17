@@ -4,7 +4,7 @@ autozle() {
 }
 
 # enter keypad transmit mode whilst in the zle
-if (( ${+terminfo[smkx]} )) && (( ${+terminfo[rmkx]} )); then
+if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
     function zle-line-init () {
         print -n ${terminfo[smkx]}
     }
