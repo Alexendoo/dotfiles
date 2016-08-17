@@ -15,8 +15,14 @@ precmd_prompt() {
   PROMPT+='%# '
 }
 
+precmd_title() {
+  # set title to the current directory
+  print -n "\e]0;${USER}@${HOST}: ${PWD}\a"
+}
+
 precmd_functions+=(
   precmd_prompt
+  precmd_title
 )
 
 add_vcs_style() {
