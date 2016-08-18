@@ -20,9 +20,25 @@ set number
 " enable mouse usage
 set mouse=a
 
+" show partial commands
+set showcmd
+
+" start searching whilst typing
+set incsearch
+
+" highlight all search results
+set hlsearch
+
+" alt + u to clear search
+map <Esc>u :nohlsearch<Cr>
+
 " show options available on tab
 set wildmenu
 set wildmode=longest:full:full
+
+" disable swap and backup files
+set noswapfile
+set nobackup
 
 " bracketed paste support - http://stackoverflow.com/a/7053522
 if &term =~ "xterm.*"

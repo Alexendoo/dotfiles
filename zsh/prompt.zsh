@@ -36,3 +36,4 @@ zstyle ':vcs_info:*' enable git hg
 
 add_vcs_style '*'   blue
 add_vcs_style 'git' magenta
+
