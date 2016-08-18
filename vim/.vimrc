@@ -36,6 +36,10 @@ map <Esc>u :nohlsearch<Cr>
 set wildmenu
 set wildmode=longest:full:full
 
+" enable modelines (config at the bottom of files)
+set modeline
+set modelines=5
+
 " disable swap and backup files
 set noswapfile
 set nobackup
