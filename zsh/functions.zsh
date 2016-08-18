@@ -1,7 +1,3 @@
-chpwd() {
-  print -l $PWD ${(u)dirstack} > $DIRSTACKFILE
-}
-
 listen() {
   trap "return 0" INT
   while true; do

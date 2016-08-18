@@ -62,7 +62,7 @@ setopt interactive_comments
 setopt long_list_jobs
 
 ##
-# Zsh Line Editor
+#  Zsh Line Editor
 ##
 
 # beeps are annoying
