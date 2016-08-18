@@ -3,6 +3,7 @@ alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias e='code'
 alias p='less'
 alias s='screen -R'
+alias se='sudoedit'
 alias help='run-help'
 alias grep='grep --color=auto'
 
