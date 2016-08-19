@@ -7,6 +7,8 @@ mitmproxy/.mitmproxy/*.pem
 ssh/.ssh/*
 !ssh/.ssh/config
 
+vscode/.config/Code/User/workspaceStorage
+
 # Files that aren't as important and change often
 xfce/.config/xfce4/helpers.rc
 xfce/.config/xfce4/panel/whiskermenu-16.rc
