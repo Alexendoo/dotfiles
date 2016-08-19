@@ -1,3 +1,3 @@
 #### Usage:
 
-`./install [folder]`
+`./dotinstall [folder]`
