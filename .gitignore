@@ -9,6 +9,13 @@ ssh/.ssh/*
 
 vscode/.config/Code/User/workspaceStorage
 
+weechat/.weechat/*.log
+weechat/.weechat/*.txt
+weechat/.weechat/sec.conf
+weechat/.weechat/weechat_*
+weechat/.weechat/*/*
+!weechat/.weechat/*/autoload
+
 # Files that aren't as important and change often
 xfce/.config/xfce4/helpers.rc
 xfce/.config/xfce4/panel/whiskermenu-16.rc
