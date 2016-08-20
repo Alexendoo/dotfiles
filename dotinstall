@@ -11,7 +11,7 @@ install_zsh() {
 }
 
 install_generic() {
-    stow $1
+    stow -t "$HOME" $1
 }
 
 for var; do
