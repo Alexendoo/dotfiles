@@ -6,6 +6,12 @@ listen() {
   done
 }
 
+mkcd() {
+  [ -z "$1" ] && return 1
+  mkdir -p "$1"
+  cd "$1"
+}
+
 # http://zshwiki.org/home/builtin/functions/zmv
 autoload -U zmv
 
