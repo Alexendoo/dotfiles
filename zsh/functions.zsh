@@ -1,3 +1,9 @@
+clcd() {
+  [ -z "$1" ] && return 1
+  git clone "$1"
+  cd "$1:t:r"
+}
+
 listen() {
   trap "return 0" INT
   while true; do
