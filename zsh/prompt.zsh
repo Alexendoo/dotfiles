@@ -17,7 +17,7 @@ precmd_prompt() {
 
 precmd_title() {
   # set title to the current directory
-  print -n "\e]0;${USER}@${HOST}: ${PWD}\a"
+  print -Pn '\e]0;%n@%M: %~\a'
 }
 
 precmd_functions+=(

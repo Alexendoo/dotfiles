@@ -82,7 +82,7 @@ done
 unset gitcommand gitcommands
 
 # https://github.com/github/hub
-if type hub > /dev/null; then
+if (( $+commands[hub] )); then
   alias create='hub create'
   alias browse='hub browse'
   alias compare='hub compare'
