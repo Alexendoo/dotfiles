@@ -1,3 +1,4 @@
+# git clone + cd into the directory
 clcd() {
   [ -z "$1" ] && return 1
   git clone "$1"
@@ -16,6 +17,21 @@ mkcd() {
   [ -z "$1" ] && return 1
   mkdir -p "$1"
   cd "$1"
+}
+
+# run a binary installed into a local node_modules folder
+nr() {
+  local -a parts
+  local i try_file
+  parts=('' ${(s:/:)PWD})
+  i=$#parts
+  while (( i-- )); do
+    try_file="${(j:/:)parts[1,$i+1]}/node_modules/.bin/$1"
+    if [[ -f "$try_file" ]]; then
+      echo "found $try_file"
+      "$try_file" ${@:2}
+    fi
+  done
 }
 
 # http://zshwiki.org/home/builtin/functions/zmv
