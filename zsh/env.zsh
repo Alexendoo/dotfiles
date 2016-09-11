@@ -5,6 +5,7 @@ export PAGER=less
 export HISTFILE=~/.zsh_history
 export HISTSIZE=5000
 export SAVEHIST=50000
+export N_PREFIX="$HOME/.n"
 
 if [ -f ~/go ]; then
   export GOPATH=~/go

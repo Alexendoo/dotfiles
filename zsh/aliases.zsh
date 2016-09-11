@@ -25,8 +25,6 @@ alias mkdir='mkdir -p'
 alias system='sudo systemctl'
 alias journal='sudo journalctl'
 
-alias init-nvm='source /usr/share/nvm/init-nvm.sh'
-
 alias ff="git merge --ff-only"
 alias g="git"
 alias ga="git add"
