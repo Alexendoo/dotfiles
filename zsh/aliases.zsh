@@ -8,6 +8,8 @@ alias help='run-help'
 alias grep='grep --color=auto'
 
 alias ng='noglob'
+alias nv='glide novendor'
+alias nvtest='go test $(glide novendor)'
 
 alias ls='ls --group-directories-first --color --file-type'
 alias l='ls -lh'
