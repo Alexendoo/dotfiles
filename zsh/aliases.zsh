@@ -11,6 +11,8 @@ alias ng='noglob'
 alias nv='glide novendor'
 alias nvtest='go test $(glide novendor)'
 alias nvbench='go test -bench=. -run=^a $(glide nv)'
+alias ggtest='ginkgo -r -randomizeAllSpecs -randomizeSuites -failOnPending -trace -race -progress'
+alias ggwatch='ginkgo watch -r'
 
 alias ls='ls --group-directories-first --color --file-type'
 alias l='ls -lh'
