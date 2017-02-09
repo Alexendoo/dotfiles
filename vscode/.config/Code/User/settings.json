@@ -8,5 +8,6 @@
   "go.gopath": "/home/alex/go",
   "rust.racerPath": "/home/alex/.cargo/bin/racer",
   "rust.rustfmtPath": "/home/alex/.cargo/bin/rustfmt",
-  "rust.rustLangSrcPath": "/home/alex/rust/rust/src"
+  "rust.rustLangSrcPath": "/home/alex/rust/rust/src",
+  "window.menuBarVisibility": "toggle"
 }
