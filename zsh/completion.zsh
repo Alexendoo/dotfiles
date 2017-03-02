@@ -33,3 +33,8 @@ zstyle ':completion:*:default'      list-colors ${(s.:.)LS_COLORS}
 # add sections to man(1) completion
 zstyle ':completion:*:manuals'      separate-sections true
 zstyle ':completion:*:manuals.*'    insert-sections   true
+
+if [[ -f /usr/share/fzf/completion.zsh ]]; then
+  export FZF_COMPLETION_TRIGGER=']]'
+  source /usr/share/fzf/completion.zsh
+fi
