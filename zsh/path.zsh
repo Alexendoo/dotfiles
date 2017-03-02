@@ -1,8 +1,9 @@
 path=(
-  ~/.n/bin
-  ~/.gem/ruby/*/bin(Nn[-1])
-  ~/.node_modules/bin
   ~/.cargo/bin
+  ~/.gem/ruby/*/bin(Nn[-1])
+  ~/.n/bin
+  ~/.config/yarn/global/node_modules/.bin
+  ~/.node_modules/bin
   ~/go/bin
   $path
 )
