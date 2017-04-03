@@ -6,7 +6,11 @@ precmd_prompt() {
   # return status if ≠ 0
   PROMPT+='%B%F{red}%(?..%? )%b%f'
   # user@host
-  PROMPT+='%F{blue}%n%f@%M '
+  if (( EUID == 0 )); then
+    PROMPT+='%F{red}%n%f@%M '
+  else
+    PROMPT+='%F{blue}%n%f@%M '
+  fi
   # current directory, truncated to 40 chars
   PROMPT+='%B%40<..<%~%<<%b '
   # git/hg/etc information
