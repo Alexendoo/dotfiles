@@ -30,6 +30,8 @@ alias mkdir='mkdir -p'
 alias system='sudo systemctl'
 alias journal='sudo journalctl'
 
+alias vup='vagrant up && vagrant ssh && vagrant destroy'
+
 alias ff="git merge --ff-only"
 alias g="git"
 alias ga="git add"
