@@ -7,7 +7,6 @@ alias se='sudoedit'
 alias help='run-help'
 alias grep='grep --color=auto'
 
-alias ng='noglob'
 alias nv='glide novendor'
 alias nvtest='go test $(glide novendor)'
 alias nvbench='go test -bench=. -run=^a $(glide nv)'
