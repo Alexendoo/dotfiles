@@ -1,13 +1,14 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.fontFamily": "Hasklig, Consolas, 'Courier New', monospace",
+  "editor.minimap.enabled": false,
   "editor.tabSize": 2,
-  "editor.renderWhitespace": true,
   "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
-  "go.gopath": "/home/alex/go",
   "rust.racerPath": "/home/alex/.cargo/bin/racer",
   "rust.rustfmtPath": "/home/alex/.cargo/bin/rustfmt",
   "rust.rustLangSrcPath": "/home/alex/rust/rust/src",
-  "window.menuBarVisibility": "toggle"
+  "window.menuBarVisibility": "toggle",
+  "workbench.iconTheme": "vs-seti",
+  "go.autocompleteUnimportedPackages": true
 }
