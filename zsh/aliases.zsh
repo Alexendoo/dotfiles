@@ -102,3 +102,7 @@ if [[ $(uname -o) == 'Cygwin' ]]; then
   alias win='cmd /c'
   alias heroku='heroku.bat'
 fi
+
+if (( $+commands[yaourt] )); then
+  alias up="yaourt -Syua"
+fi
