@@ -7,12 +7,6 @@ alias se='sudoedit'
 alias help='run-help'
 alias grep='grep --color=auto'
 
-alias nv='glide novendor'
-alias nvtest='go test $(glide novendor)'
-alias nvbench='go test -bench=. -run=^a $(glide nv)'
-alias ggtest='ginkgo -r -randomizeAllSpecs -randomizeSuites -failOnPending -trace -race -progress'
-alias ggwatch='ginkgo watch -r'
-
 alias ls='ls --group-directories-first --color --file-type'
 alias l='ls -lh'
 alias la='ls -lha'
@@ -106,3 +100,6 @@ fi
 if (( $+commands[yaourt] )); then
   alias up="yaourt -Syua"
 fi
+
+alias yui="yarn upgrade-interactive"
+alias ygui="yarn global upgrade-interactive"
