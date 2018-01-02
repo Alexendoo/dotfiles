@@ -38,5 +38,10 @@ nr() {
 autoload -U zmv
 
 # zsh builtin help command
-unalias run-help
-autoload -U run-help
+unalias run-help 2>/dev/null
+autoload -U run-help \
+    run-help-ip \
+    run-help-git \
+    run-help-sudo \
+    run-help-openssl \
+
