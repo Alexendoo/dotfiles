@@ -34,6 +34,12 @@ nr() {
   done
 }
 
+# git commit add
+gca() {
+  git add ${@:-.}
+  git commit
+}
+
 # http://zshwiki.org/home/builtin/functions/zmv
 autoload -U zmv
 
