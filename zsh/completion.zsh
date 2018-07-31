@@ -34,16 +34,6 @@ zstyle ':completion:*:default'      list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*:manuals'      separate-sections true
 zstyle ':completion:*:manuals.*'    insert-sections   true
 
-# https://github.com/zsh-users/zsh-completions
-if [[ -d ~/.zsh-completions/src ]]; then
-  fpath+=( ~/.zsh-completions/src )
-fi
-
-# User local fpath
-if [[ -d ~/.fpath ]]; then
-  fpath+=( ~/.fpath )
-fi
-
 # https://github.com/junegunn/fzf
 if [[ -f /usr/share/fzf/completion.zsh ]]; then
   export FZF_COMPLETION_TRIGGER=']]'

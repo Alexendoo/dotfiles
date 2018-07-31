@@ -12,4 +12,4 @@ for config in $sources; do
   source $config
 done
 
-unset config sources zsh_dir
+unset config sources

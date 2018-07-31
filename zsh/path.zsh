@@ -1,5 +1,5 @@
 path=(
-  ~/bin
+  ~/.local/share/bins/.bin
   ~/.cargo/bin
   ~/.gem/ruby/*/bin(Nn[-1])
   ~/.n/bin
