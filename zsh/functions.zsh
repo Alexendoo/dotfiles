@@ -60,6 +60,15 @@ update-bins() {
   )
 }
 
+# usage: punch port [external_port]
+punch() {
+  local pnpstatus=$(upnpc -s)
+
+  local lanip=$(<<< $pnpstatus grep 'Local LAN ip address :' | cut -d' ' -f6)
+
+  upnpc -a $lanip $1 ${2:-$1} tcp
+}
+
 # http://zshwiki.org/home/builtin/functions/zmv
 autoload -U zmv
 
