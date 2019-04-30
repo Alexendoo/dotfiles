@@ -1,8 +1,8 @@
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 alias e='code'
+alias h='hexyl -v'
 alias p='less'
-alias s='screen -R'
 alias se='sudoedit'
 alias help='run-help'
 alias grep='grep --color=auto'
@@ -22,6 +22,8 @@ alias mkdir='mkdir -p'
 
 alias system='sudo systemctl'
 alias journal='sudo journalctl'
+alias s='sudo systemctl'
+alias j='sudo journalctl'
 
 alias vup='vagrant up && vagrant ssh && vagrant destroy'
 
