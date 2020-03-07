@@ -1,13 +1,6 @@
 " syntax highlighting
 syntax on
 
-" insert spaces when tab is pressed
-set expandtab
-
-" ident number
-set shiftwidth=4
-set softtabstop=4
-
 " copy indent of previous line
 set autoindent
 
@@ -59,4 +52,3 @@ if &term =~ "xterm.*"
     cmap <Esc>[200~ <nop>
     cmap <Esc>[201~ <nop>
 endif
-
