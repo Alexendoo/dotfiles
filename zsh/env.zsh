@@ -7,6 +7,8 @@ export HISTSIZE=5000
 export SAVEHIST=50000
 export N_PREFIX="$HOME/.n"
 
+export RIPGREP_CONFIG_PATH="$(dirname $zsh_dir)/ripgreprc"
+
 if [[ $(uname -o) == Cygwin ]]; then
   export GROFF_NO_SGR=1
 fi
