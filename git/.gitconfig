@@ -11,3 +11,5 @@
 	autosquash = true
 [diff]
 	colorMoved = default
+[pull]
+	ff = only
