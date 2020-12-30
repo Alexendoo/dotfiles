@@ -34,6 +34,9 @@ zstyle ':completion:*:default'      list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*:manuals'      separate-sections true
 zstyle ':completion:*:manuals.*'    insert-sections   true
 
+# Ignore ORIG_HEAD, it competes with origin for tab complete
+zstyle ':completion:*:complete:git*:*:heads-local' ignored-patterns ORIG_HEAD
+
 # https://github.com/junegunn/fzf
 if [[ -f /usr/share/fzf/completion.zsh ]]; then
   export FZF_COMPLETION_TRIGGER=']]'
