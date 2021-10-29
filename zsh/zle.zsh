@@ -45,6 +45,14 @@ bindkey '^R' history-incremental-pattern-search-backward
 # alt + # -- comment line and enter (bash muscle memory)
 bindkey '^[#' comment-line
 
+# Rebind quoted-insert to alt + v
+# bindkey -r '^V'
+# bindkey '^[v' quoted-insert
+
+# enable automatic quoting of pasted URLs
+autoload -Uz bracketed-paste-url-magic
+zle -N bracketed-paste bracketed-paste-url-magic
+
 comment-line() {
   BUFFER="#$BUFFER"
   zle accept-line
