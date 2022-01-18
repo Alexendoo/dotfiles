@@ -6,10 +6,19 @@
 [commit]
 	verbose = true
 [push]
-	default = simple
+	default = upstream
 [rebase]
 	autosquash = true
 [diff]
+	algorithm = histogram
 	colorMoved = default
+	colorMovedWS = allow-indentation-change
+	mnemonicprefix = true
 [pull]
 	ff = only
+[merge]
+	conflictstyle = diff3
+	ff = false
+[status]
+	relativePaths = false
+	showStash = true

@@ -2,9 +2,8 @@ autoload -U vcs_info
 
 precmd_prompt() {
   vcs_info
-  unset PROMPT
   # return status if ≠ 0
-  PROMPT+='%B%F{red}%(?..%? )%b%f'
+  PROMPT='%B%F{red}%(?..%? )%b%f'
   # user@host
   if (( EUID == 0 )); then
     PROMPT+='%F{red}%n%f@%M '
@@ -36,7 +35,7 @@ add_vcs_style() {
   zstyle ":vcs_info:$1:*" actionformats "%F{$2}[%F{green}%b%f|%F{red}%a%F{$2}]%f"
 }
 
-zstyle ':vcs_info:*' enable git hg
+zstyle ':vcs_info:*' enable git
 
 add_vcs_style '*'   blue
 add_vcs_style 'git' magenta
