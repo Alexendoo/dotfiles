@@ -69,6 +69,12 @@ punch() {
   upnpc -a $lanip $1 ${2:-$1} tcp
 }
 
+if (( $+commands[findpkg] )); then
+  command_not_found_handler() {
+    findpkg "$1"
+  }
+fi
+
 # http://zshwiki.org/home/builtin/functions/zmv
 autoload -U zmv
 
