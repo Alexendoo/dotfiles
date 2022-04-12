@@ -67,3 +67,6 @@ setopt long_list_jobs
 
 # beeps are annoying
 setopt no_beep
+
+# stop ctrl + s freezing the terminal
+setopt noflowcontrol
