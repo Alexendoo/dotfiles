@@ -20,5 +20,8 @@
 	conflictstyle = diff3
 	ff = false
 [status]
-	relativePaths = false
 	showStash = true
+[tag]
+	sort = v:refname
+[branch]
+	sort = v:refname
