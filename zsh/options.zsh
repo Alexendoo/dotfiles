@@ -22,16 +22,6 @@ setopt pushd_minus
 setopt complete_in_word
 
 ##
-#  Expansion and Globbing
-##
-
-# '#', '~' and '^' globs
-setopt extended_glob
-
-# pass failed matches as a command eg HEAD^
-setopt no_nomatch
-
-##
 #  History
 ##
 
