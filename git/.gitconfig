@@ -1,8 +1,6 @@
 [user]
 	email = alex@macleod.io
 	name = Alex Macleod
-[core]
-	pager = diff-so-fancy | less
 [commit]
 	verbose = true
 [push]
