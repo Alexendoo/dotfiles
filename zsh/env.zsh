@@ -8,6 +8,8 @@ export SAVEHIST=50000
 export N_PREFIX="$HOME/.n"
 
 export RIPGREP_CONFIG_PATH="$(dirname $zsh_dir)/ripgreprc"
+export CLIPPY_DISABLE_DOCS_LINKS=1
+export RUSTC_ICE=0
 
 if [[ $(uname -o) == Cygwin ]]; then
   export GROFF_NO_SGR=1
