@@ -1,3 +1,5 @@
+alias stage1='RUSTUP_TOOLCHAIN=stage1 LD_LIBRARY_PATH=$(rustc +stage1 --print target-libdir)'
+
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 alias e='code'
