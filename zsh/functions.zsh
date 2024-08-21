@@ -19,47 +19,6 @@ mkcd() {
   cd "$1"
 }
 
-# run a binary installed into a local node_modules folder
-nr() {
-  local parts=('' ${(s:/:)PWD})
-  local i=$#parts
-  while (( i-- )); do
-    local try_file="${(j:/:)parts[1,$i+1]}/node_modules/.bin/$1"
-    if [[ -f "$try_file" ]]; then
-      echo "found $try_file"
-      "$try_file" ${@:2}
-    fi
-  done
-}
-
-update-bins() {
-  (
-    mkcd ${XDG_DATA_HOME:-~/.local/share}
-    mkcd "bins"
-    mkdir ".bin"
-
-
-    repos=(
-      "git@github.com:PotatoLabs/git-redate.git" "git-redate"
-    )
-
-    for ((i = 1; i <= $#repos; i+=2)); do
-      repo=${repos[i]}
-      link=${repos[i+1]}
-
-      target=$repo:t:r
-
-      if [[ -d $target ]]; then
-        git --git-dir="$target/.git" pull --ff-only -v
-      else
-        git clone $repo $target
-      fi
-
-      ln -sf "$PWD/$target/$link" ".bin/$target"
-    done
-  )
-}
-
 # usage: punch port [external_port]
 punch() {
   local pnpstatus=$(upnpc -s)
