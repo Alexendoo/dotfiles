@@ -7,7 +7,6 @@ export HISTSIZE=5000
 export SAVEHIST=50000
 export N_PREFIX="$HOME/.n"
 
-export RIPGREP_CONFIG_PATH="$(dirname $zsh_dir)/ripgreprc"
 export CLIPPY_DISABLE_DOCS_LINKS=1
 export RUSTC_ICE=0
 
@@ -16,7 +15,7 @@ if [[ $(uname -o) == Cygwin ]]; then
 fi
 
 # less default opts
-export LESS="-x 4 -cR -+FX"
+export LESS="--tabs 4 --ignore-case -R --chop-long-lines --mouse --wheel-lines 3"
 
 # less colours
 export LESS_TERMCAP_mb=$'\E[01;31m'
