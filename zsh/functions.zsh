@@ -1,3 +1,8 @@
+pr() {
+  local ref="$(gh pr view $1 --json headRefName -q .headRefName)"
+  gh pr checkout --branch "pr/$1/$ref" "$@"
+}
+
 # git clone + cd into the directory
 clcd() {
   [ -z "$1" ] && return 1
