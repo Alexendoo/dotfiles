@@ -7,6 +7,7 @@ export HISTSIZE=5000
 export SAVEHIST=50000
 export N_PREFIX="$HOME/.n"
 
+export CARGO_TERM_HYPERLINKS=false
 export CLIPPY_DISABLE_DOCS_LINKS=1
 export RUSTC_ICE=0
 
